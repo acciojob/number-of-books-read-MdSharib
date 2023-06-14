@@ -15,10 +15,22 @@ const library = [
     readingStatus: false,
   },
 ];
-
+let count = 0;
 const numberOfBooksRead = () => {
   // write your code here
+	
+	for(const val of library){
+    for(const key in val){
+      if(val[key] === true){
+        count++;
+      }
+    }
+  }	 
+	
+	return count;
 };
+
+
 
 // Do not change the code below
 
